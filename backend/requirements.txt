@@ -1,2 +1,2 @@
-fastapi==latest
-psycopg2-binary==latest
+fastapi==0.110.2
+psycopg2-binary==2.9.9
