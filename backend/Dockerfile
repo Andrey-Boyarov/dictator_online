@@ -1,8 +1,8 @@
 FROM python:3.10.14-alpine3.19
 
-WORKDIR /backend
+WORKDIR /app
 
-COPY ./backend/requirements.txt .
+COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
 

@@ -5,15 +5,15 @@ services:
   database:
     image: postgres:16.2
     ports:
-      - 5436:5436
+      - 5436:5432
     container_name: dictator-db
     volumes:
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
     environment:
-      - POSTGRES_USER="admin"
-      - POSTGRESS_PASSWORD="admin"
-      - POSTGRES_DB="dictator"
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=dictator
     restart: always
     networks:
       - dictator-backend-network
@@ -22,14 +22,14 @@ services:
     build:
       dockerfile: ./backend/Dockerfile
     restart: always
-    command: uvicorn main:app --host 0.0.0.0
+    command: uvicorn ./backend/main:app --host 0.0.0.0
     ports:
       - 8001:8001
     container_name: dictator-online-backend
     depends_on:
       - database
     environment:
-      - DATABASE-URL=postgresql://admin:admin@db:5436/dictator
+      - DATABASE-URL=postgresql://admin:admin@database:5436/dictator
     networks:
       - dictator-backend-network
 
