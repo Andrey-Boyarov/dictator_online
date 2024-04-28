@@ -2,6 +2,7 @@ create table questions (
 
     id bigint primary key,
     prompt text, 
+    fraction text,
 
     confirm_crowd bigint, 
     confirm_oligarchs bigint,
@@ -16,5 +17,5 @@ create table questions (
     reject_lawyers bigint, 
     reject_army bigint, 
     reject_mafia bigint,
-    
+
     is_relevant boolean default true);

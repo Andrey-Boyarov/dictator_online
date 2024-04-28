@@ -50,7 +50,7 @@ async def find_result(id: int, answer: bool):
         return await find_confirmation_result(id=id)
     return await find_rejection_result(id=id)
 
-# id, prompt, 
+# id, prompt, fraction,
 # confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
 # reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia,
 # is_relevant
