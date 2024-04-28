@@ -23,7 +23,7 @@ services:
       dockerfile: ./backend/Dockerfile
     restart: always
     ports:
-      - 8001:8001
+      - 8001:8000
     container_name: dictator-online-backend
     depends_on:
       - database
