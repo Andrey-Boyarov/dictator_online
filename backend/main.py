@@ -42,7 +42,7 @@ async def find_random_question(fraction: str):
     total = cur.fetchone()
     index = randrange(total)
 
-    cur.execute("select id, text from questions where fraction = {0} and is_relevant is true limit 1 offset {1}".format(fraction, index))
+    cur.execute("select id, prompt from questions where fraction = {0} and is_relevant is true limit 1 offset {1}".format(fraction, index))
     return cur.fetchone()
 
 async def find_result(id: int, answer: bool):
@@ -50,7 +50,7 @@ async def find_result(id: int, answer: bool):
         return await find_confirmation_result(id=id)
     return await find_rejection_result(id=id)
 
-# id, text, 
+# id, prompt, 
 # confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
 # reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia,
 # is_relevant
