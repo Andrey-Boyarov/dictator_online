@@ -1,21 +1,21 @@
 create table questions (
 
-    id bigint primary key,
+    id serial primary key,
     prompt text, 
-    fraction text,
+    faction text,
 
     confirm_crowd bigint, 
     confirm_oligarchs bigint,
-    confirm_enforcment bigint,
+    confirm_enforcement bigint,
     confirm_lawyers bigint,
     confirm_army bigint,
     confirm_mafia bigint,
 
     reject_crowd bigint,
     reject_oligarchs bigint, 
-    reject_enforcment bigint, 
+    reject_enforcement bigint, 
     reject_lawyers bigint, 
     reject_army bigint, 
     reject_mafia bigint,
 
-    is_relevant boolean default true);
+    active boolean default true);
