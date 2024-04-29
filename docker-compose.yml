@@ -20,7 +20,8 @@ services:
 
   backend:
     build:
-      dockerfile: ./backend/Dockerfile
+      context: ./backend
+      dockerfile: Dockerfile
     restart: always
     ports:
       - 8001:8000
@@ -28,7 +29,11 @@ services:
     depends_on:
       - database
     environment:
-      - DATABASE-URL=postgresql://admin:admin@database:5436/dictator
+      - DB_USERNAME=admin
+      - DB_PASSWORD=admin
+      - HOST=database
+      - PORT=5432
+      - DB_DATABASE=dictator
     networks:
       - dictator-backend-network
 

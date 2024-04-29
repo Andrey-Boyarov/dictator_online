@@ -1,6 +1,6 @@
-INSERT INTO questions (prompt, fraction, 
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO questions (prompt, faction, 
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Предложение ограничить рабочий день до 4 часов для всех, кроме олигархов, которые могут работать всего 2 часа, получив при этом зарплату в 10 раз выше', 'crowd', -2, +2, -2, -2, -2, -2, +2, -2, +2, +2, +2, +2),
 ('Запретить любые роскошные потребности для олигархов, включая эксклюзивные клубы и яхты, перераспределив эти ресурсы на поддержку медицинских услуг для обычных граждан', 'oligarchs', -2, +2, -2, -2, -2, -2, +2, -2, +2, +2, +2, +2),
@@ -10,9 +10,9 @@ VALUES
 ('Установить мафию в качестве единственной исполнительной власти в стране, с возможностью задержания и наказания любого члена общества без суда и следствия', 'mafia', -2, +2, -2, -2, -2, -2, +2, -2, +2, +2, +2, +2);
 -- Продолжайте добавлять другие запросы в том же формате, если вам нужно больше примеров.
 
-INSERT INTO questions (prompt, fraction, 
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO questions (prompt, faction, 
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Введение налога на воздух для обычных граждан, с избавлением олигархов от этого обязательства в обмен на дополнительные льготы', 'crowd', -2, +2, -2, -2, -2, -2, +2, -2, +2, +2, +2, +2),
 ('Предложение предоставить олигархам доступ к эксклюзивной медицинской технологии, в то время как обычным гражданам будет отказано в доступе к базовым медицинским услугам', 'oligarchs', -2, +2, -2, -2, -2, -2, +2, -2, +2, +2, +2, +2),
@@ -22,9 +22,9 @@ VALUES
 ('Предложение закона, разрешающего мафии управлять всей экономикой страны и контролировать законность всех бизнес-сделок, при этом обещая "защиту" для тех, кто согласится подчиниться', 'mafia', -2, +2, -2, -2, -2, -2, +2, -2, +2, +2, +2, +2);
 -- Можете добавлять больше запросов в том же формате, если нужно.
 
-INSERT INTO requests (prompt, fraction,
-                      confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-                      reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO requests (prompt, faction,
+                      confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+                      reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES
 ('Пожалуйста, разрешите народу иметь доступ к бесплатным транспортным средствам, как у олигархов.', 'crowd',
   -2, +2, -2, +1, -1, -2,
@@ -52,9 +52,9 @@ VALUES
 
 -- Продолжайте добавлять просьбы в этот запрос, пока не достигнете 100.
 
-INSERT INTO requests (prompt, fraction,
-                      confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-                      reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO requests (prompt, faction,
+                      confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+                      reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES
 ('Просим разрешить народу использовать деньги олигархов вместо обычных кредитных карт.', 'crowd',
   -2, +2, -2, -1, -1, -2,
@@ -97,9 +97,9 @@ VALUES
   +2, +1, +1, -1, +1, +2);
 
 
-INSERT INTO requests (prompt, fraction,
-                      confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-                      reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO requests (prompt, faction,
+                      confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+                      reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES
 ('Просим разрешить народу использовать яхты олигархов для рыбалки в выходные.', 'crowd',
   -2, +2, -2, -1, -1, -2,
@@ -172,9 +172,9 @@ VALUES
 ('Позвольте мафии использовать подземные бункеры для устройства своих собственных ночных клубов.', 'mafia',
   -2, -1, -2, -1, -2, +2);
 
-  INSERT INTO requests (prompt, fraction,
-                      confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-                      reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+  INSERT INTO requests (prompt, faction,
+                      confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+                      reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES
 ('Просим разрешить народу использовать вертолеты олигархов для туристических прогулок над городом.', 'crowd',
   -2, +2, -2, -1, -1, -2,
@@ -244,9 +244,9 @@ VALUES
   -2, -1, -2, -1, +2, -2,
   +2, +1, +2, +1, -1, +2);
 
-  INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+  INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Увеличить минимальную зарплату в стране до прожиточного минимума для всех работников?', 'crowd',
     2, -2, -1, 2, -1, -1,
@@ -288,9 +288,9 @@ VALUES
     2, -1, -2, 2, -1, -1,
     -2, 1, 2, -2, 1, 1);
 
-INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Увеличить налоги для богатых и направить средства на улучшение образования и медицины для всех?', 'crowd',
     2, -2, -1, 2, -1, -1,
@@ -366,9 +366,9 @@ VALUES
 
 
 
-INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Обеспечить бесплатное питание для всех школьников в государственных школах?', 'crowd',
     2, -2, -1, 2, -1, -1,
@@ -443,9 +443,9 @@ VALUES
     1, -2, -1, 1, 1, -2);
 
 
-INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Предоставить бесплатный доступ к интернету и компьютерам для всех школьников?', 'crowd',
     2, -2, -1, 2, -1, -1,
@@ -516,9 +516,9 @@ VALUES
     1, 1, 1, 1, -2, 1);
 
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Ввести систему штрафов за неповиновение законам, при которых штраф зависит от размера зарплаты?', 'crowd',
     -2, -2, -1, 2, -1, -1,
@@ -561,9 +561,9 @@ VALUES
     -2, 1, 2, -2, 1, 1);
 
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Обязать всех граждан смотреть комедийные передачи олигархов национального телевидения как условие для получения зарплаты?', 'crowd',
     -2, -2, -1, 2, -1, -1,
@@ -630,9 +630,9 @@ VALUES
     -2, 1, 2, -2, +1, +1);
 
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Обязать граждан петь гимн олигарха перед началом каждого обеда?', 'crowd',
     -2, -2, -1, 2, -1, -1,
@@ -700,9 +700,9 @@ VALUES
 
 
 
-INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Провести ежегодный фестиваль олигархов, где граждане будут выступать в качестве человеческих фейерверков?', 'crowd',
     -2, -2, -1, 2, -1, -1,
@@ -753,9 +753,9 @@ VALUES
     1, -2, -1, 1, 1, -2);
 
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Установить обязательное еженедельное поклонение перед изображением главаря мафии в каждом городе?', 'mafia',
     -1, -1, -1, -1, -1, 2,
@@ -818,9 +818,9 @@ VALUES
     1, 1, 1, 1, 1, -2);
 
 
-INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Установить систему "мафиозных казней" для тех, кто не следует указаниям или представляет угрозу для мафиозной власти?', 'mafia',
     -1, -1, -1, -1, -1, 2,
@@ -835,9 +835,9 @@ VALUES
     1, 1, 1, 1, 1, -2);
 
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Установить ежемесячные "взносы за безопасность" для граждан, чтобы обеспечить их защиту от действий коррумпированных силовиков?', 'enforcment',
     -1, -1, -2, -1, -1, 1,
@@ -880,9 +880,9 @@ VALUES
     1, 1, 2, 1, 1, -2);
 
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Провести специальное расследование заговора между правительством и инопланетянами, чтобы удовлетворить требования сторонников теории заговоров?', 'crowd',
     2, -1, -1, -1, -1, -1,
@@ -936,9 +936,9 @@ VALUES
     2, -1, -1, -1, -1, -1,
     -2, 1, 1, 1, 1, 1);
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Разрешить сторонникам теорий заговоров управлять специальными комитетами по исследованию загадочных явлений и инопланетного воздействия?', 'crowd',
     2, -1, -1, -1, -1, -1,
@@ -993,9 +993,9 @@ VALUES
     -2, 1, 1, 1, 1, 1);
 
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Предоставить членам странной религиозной секты право на проведение обрядов жертвоприношений, так как это их религиозное убеждение?', 'lawyers',
     -1, -1, -1, 2, -1, -1,
@@ -1049,9 +1049,9 @@ VALUES
     -1, -1, -1, 2, -1, -1,
     1, 1, 1, -2, 1, 1);
 
-    INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+    INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Законодательно запретить любые высказывания или действия, которые могут вызвать дискомфорт у любого странного или узкого меньшинства?', 'lawyers',
     1, 1, 1, 2, 1, 1,
@@ -1105,9 +1105,9 @@ VALUES
     1, 1, 1, 2, 1, 1,
     -2, -2, -2, -2, -2, -2);
 
-INSERT INTO questions (prompt, fraction,
-    confirm_crowd, confirm_oligarchs, confirm_enforcment, confirm_lawyers, confirm_army, confirm_mafia,
-    reject_crowd, reject_oligarchs, reject_enforcment, reject_lawyers, reject_army, reject_mafia)
+INSERT INTO questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
 VALUES 
 ('Установить особые налоговые льготы для компаний, принадлежащих родственникам диктатора, чтобы поощрить их инвестиции в экономику?', 'oligarchs',
     -1, 2, -1, -1, -1, -1,
@@ -1148,3 +1148,22 @@ VALUES
 ('Разрешить компаниям, связанным с родственниками диктатора, осуществлять добычу природных ресурсов без соблюдения строгих экологических стандартов?', 'oligarchs',
     -1, 2, -1, -1, -1, -1,
     1, -2, 1, 1, 1, 1);
+
+
+insert into questions (prompt, faction,
+    confirm_crowd, confirm_oligarchs, confirm_enforcement, confirm_lawyers, confirm_army, confirm_mafia,
+    reject_crowd, reject_oligarchs, reject_enforcement, reject_lawyers, reject_army, reject_mafia)
+values
+(
+    'Разрешить олигархам проводить показательные казни',
+    'oligarchs',
+    -21, +13, -13, -21, 0, 0,
+    +21, -13, +13, +21, 0, 0 
+),
+
+(
+    'Легализовать проституцию',
+    'mafia',
+    +3, +8, -3, 0, -8, +13,
+    -1, -13, +3, 0, +8, -21
+);
